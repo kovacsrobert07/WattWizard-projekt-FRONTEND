@@ -1,0 +1,164 @@
+.navbar {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  justify-content:space-evenly;
+  align-items: center;
+  width:100%;
+  background-color: aliceblue;
+  text-align: center;
+  padding: 20px;
+  height: 20px;
+  
+ 
+}
+/* A navigacios bar JOBB oldalanak a tulajdonsagai */
+.navbar .JobbOldal {
+  flex: 50%;
+  height: 100%;
+  display: flex;
+  align-items:center;
+  justify-content:right;
+  
+  
+}
+
+.navbar a {
+  color: rgb(124, 118, 118);
+  text-decoration: none;
+  margin: 20px;
+}
+/* milyen szinu legyen a szoveg ha ra visszuk az egeret */
+.navbar a:hover{ 
+  color:rgb(0, 0, 0)
+}
+
+
+
+.navbar .JobbOldal button {
+  background-color: transparent;
+  border: none;
+  color: rgb(241, 240, 240);
+  cursor: pointer;
+  word-spacing: 10px;
+
+
+}
+.navbar .JobbOldal svg {
+  font-size: 40px;
+}
+.navbar .JobbOldal img {
+  width: 40px;
+}
+
+/* A navigacios bar BAL oldalanak a tulajdonsagai */
+
+.navbar .BalOldal {
+  flex: 50%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+}
+
+/* mekkora legyen a kep */
+.navbar .BalOldal img {
+  width: 70px;
+}
+
+.navbar .KeresoFelulet {
+  position:absolute;   
+   top: 0;               
+  left: 50%;            
+  transform: translateX(-50%); 
+  width: 450px;         
+  padding: 10px; 
+  background-color: white;
+  border-radius: 50px;
+  border: 2px solid grey ;
+        
+  
+}
+.navbar input{
+  width: 380px;
+  height: 25px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  border:2px solid rgba(255, 255, 255, 0.552);
+  font-size: 14px;
+  color: black;
+  padding: 0px 0px 0px 0px;
+  
+} 
+
+.navbar #open {
+  padding-left: 0px;
+}
+.navbar #open img {
+  display: none;
+}
+
+.navbar #close img {
+  display: inherit;
+}
+
+.navbar #open .hiddenLinks {
+  display: inherit;
+  margin-left: 30px;
+}
+
+.navbar #close .hiddenLinks {
+  display: none;
+}
+.navbar #open a {
+  width: 70px;
+  margin: 5px;
+}
+@media only screen and (max-width: 900px) {
+  .navbar .JobbOldal a {
+    width: 70px;
+  }
+  .navbar .BalOldal {
+    padding-left: 50px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar .JobbOldal a {
+    display: none;
+  }
+
+  .navbar .JobbOldal {
+    justify-content: flex-end;
+    padding-right: 50px;
+  }
+
+  .navbar .JobbOldal button {
+    display: inherit;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .navbar .JobbOldal button {
+    display: none;
+  }
+
+  .hiddenLinks {
+    display: none;
+  }
+}
+
+
+
+
+
+
+  
+  
+
+  
+
+
+
