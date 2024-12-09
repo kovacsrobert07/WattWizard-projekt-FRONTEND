@@ -1,0 +1,102 @@
+ 
+
+.Pult {
+    position: fixed; /* Rögzített pozíció a képernyőn */
+    width: 150px; /* Szélesség */
+    background-color: aliceblue; /* Háttérszín */
+    top: 180px; /* Távolság a felső résztől */
+    left: 30px; /* Távolság a bal oldaltól */
+    border-radius: 30px; /* Lekerekített sarkok */
+    height: 200px; /* Magasság */
+    color: black; /* Szöveg színe */
+    text-align: center; /* Szöveg középre igazítása */
+    padding: 20px; /* Belső margó */
+    box-shadow: 0px 1px 13px -2px #161614; /* Árnyék hozzáadása */
+  }
+
+.Kicsipult {
+    width: 90%; /* Szélesség a szülő elemhez képest */
+    height: 90%; /* Magasság a szülő elemhez képest */
+    color: #161614; /* Szöveg színe */
+    border: 2px solid black; /* Fekete szegély */
+    border-radius: 20px; /* Lekerekített sarkok */
+    margin: auto; /* Középre igazítás */
+    align-items: center; /* Gyermek elemek vízszintes középre igazítása */
+    display: flex; /* Flexbox használata */
+    flex-direction: column; /* Gyermek elemek oszlopba rendezése */
+    justify-content: space-evenly; /* Egyenlő távolság a gyermek elemek között */
+  }
+.Kicsipult a{
+    color: #161614; /* Linkek színe */
+}
+
+
+.Termekpaletta {
+  position: fixed;
+  top: 100px;
+  width: 1200px;
+  height: 600px;
+  background-color: rgb(109, 175, 233);
+  left: 250px;
+  display: grid;
+  align-items: normal;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px 10px;
+  padding: 10px;
+  overflow-y: auto;
+  transform: translateX(30px); /* Eltolja az egész gridet jobbra */
+}
+
+
+.Kartya {
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #161614;
+  width: 150px;
+  height: 250px;
+  margin: 30px;
+ 
+  
+}
+
+.Kartya img {
+  max-width: 100%;
+  height: 70px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+.Kartya:hover {
+  transform: translateY(-10px); /* Emelkedés 10 pixelrel felfelé */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+.Kartya p{
+  margin-bottom: 10px;
+}
+.Kosarba_tesz {
+  position: static;
+ background-color: rgb(109, 175, 233);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top:auto;
+}
+.Kartya p{
+  font-size: 14px;
+}
+
+.description {
+  display: -webkit-box;
+  line-clamp: 3;
+  -webkit-line-clamp: 3;  /* Maximum 3 sor jelenjen meg */
+  -webkit-box-orient: vertical;
+   
+  text-overflow: ellipsis;  /* Három pont hozzáadása, ha a szöveg túl hosszú */
+}

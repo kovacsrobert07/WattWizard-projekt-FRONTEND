@@ -1,0 +1,87 @@
+/* Homályos háttér, ami a teljes képernyőt lefedi */
+.Homaly {
+    position: fixed; /* A pozíció fixálása, hogy a háttér mindig a képernyőn maradjon */
+    top: 0; /* A tetejétől kezdődik */
+    left: 0; /* A bal szélétől kezdődik */
+    width: 100%; /* A szélesség teljes képernyőt lefed */
+    height: 100%; /* A magasság is teljes képernyőt lefed */
+    background: rgba(109, 175, 233, 0.5); /* Átlátszó kék háttér szín */
+    backdrop-filter: blur(10px); /* A háttér elmosása (blur), így homályos lesz, ami mögötte van */
+    z-index: 1; /* Az elem a háttérbe kerül a bejelentkezési panelhez képest */
+}
+
+/* A regisztrációs panel stílusai */
+.RegisztraciosPult { 
+    position: absolute; /* Pozicionáljuk abszolút módon a képernyőhöz képest */
+    top: 50%; /* Függőlegesen a képernyő közepére kerül */
+    left: 50%; /* Vízszintesen a képernyő közepére kerül */
+    transform: translate(-50%, -50%); /* Az elem közepére pontosan elhelyezi a képernyő közepére (balra és felülről is középre) */
+    width: 400px; /* A regisztrációs panel szélessége */
+    background-color: white; /* Fehér háttér szín */
+    border-radius: 8px; /* Lekerekített sarkok */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Finom árnyék hozzáadása a panel köré */
+    padding: 20px; /* Belső térköz a panelben */
+    text-align: center; /* Középre igazítja a szöveget */
+    z-index: 2; /* Biztosítja, hogy a panel a háttér elé kerüljön */
+}
+
+/* A beviteli mezők (input) stílusai */
+.RegisztraciosPult input {
+    width: 80%; /* A beviteli mezők szélessége a formán belül */
+    padding: 10px; /* Térköz a beviteli mezők belsejében */
+    margin: 20px auto; /* Felső és alsó margó, valamint középre igazítás */
+    font-size: 1rem; /* A betűméret */
+    display: block; /* A beviteli mezők blokkszintű elemek lesznek */
+}
+
+/* A gomb (button) stílusai */
+.RegisztraciosPult button {
+    width: 40%; /* A gomb szélessége a formán belül */
+    padding: 10px; /* A gomb belső térköze */
+    margin: 10px auto; /* Középre igazítás margóval */
+    background-color: #007bff; /* Gomb háttérszín */
+    color: white; /* A gomb szövege fehér */
+    font-size: 1rem; /* A gomb szövegének betűmérete */
+    border: none; /* Nincs keret a gomb körül */
+    border-radius: 4px; /* A gomb sarkai lekerekítettek */
+    cursor: pointer; /* Kéz jel az egérkurzor, ha a gomb fölé viszik */
+}
+
+/* Hover (egér fölé viszve) stílus a gombhoz */
+.RegisztraciosPult button:hover {
+    background-color: #0056b3; /* A gomb színe sötétebb kék lesz, ha az egér fölötte van */
+}
+
+/* A logó kép stílusa */
+.RegisztraciosPult img {
+    width: 50px; /* A kép szélessége */
+    margin-bottom: 20px; /* Térköz a kép alján */
+}
+
+/* A születési dátum mezők (éves, havi, napi) tárolása */
+.birthdate-container {
+    display: flex; /* Flexbox layout használata */
+    justify-content: space-between; /* A mezők közötti távolság egyenletes elosztása */
+    gap: 10px; /* A mezők között lévő távolság */
+    margin-top: 10px; /* A születési dátum mezők felett lévő margó */
+}
+
+/* A legördülő menük (select) stílusai */
+.birthdate-container select {
+    width: 30%; /* A legördülő menük szélessége */
+    padding: 10px; /* Belső térköz */
+    font-size: 1rem; /* Betűméret */
+    border-radius: 4px; /* Lekerekített sarkok */
+    border: 1px solid #ccc; /* Halvány szürke színű keret */
+}
+
+/* Az összes select mező alatti margó */
+.RegisztraciosPult select {
+    margin-bottom: 20px; /* Térköz az utolsó input és a gomb között */
+}
+
+/* Születési dátum címke stílusai */
+.SzuletesiDatum {
+    position: relative; /* Az elem pozicionálása relatívan, hogy ne befolyásolja más elemeket */
+    color: black; /* A szöveg színe fekete */
+}

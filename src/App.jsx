@@ -5,6 +5,8 @@ import Kosar from './Pages/Kosar/Kosar';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Profile from './Pages/Profile/Profile';
 import Favorit from './Pages/Favorits/Favorit'
+import Login from './Pages/Login/Login';
+import Regisztracio from './Pages/Regisztracio/Regisztracio';
 
 
 function App() {
@@ -18,7 +20,9 @@ function App() {
           
           <Route path="/" element={<Home />} />
           <Route path='/Kosar' element={<Kosar/>}/>
-          <Route path='/Profile' element={<Profile/>}/>
+          {/* <Route path='/Profile' element={<Profile/>}/> */}
+          <Route path='/Regisztracio' element={<Regisztracio />}/>
+          <Route path='/Login' element={<Login/>}/>
           <Route path='/Favorit' element={<Favorit/>}/>
 
           

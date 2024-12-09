@@ -1,0 +1,78 @@
+/* Center the login container */
+
+
+.Homaly {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(109, 175, 233, 0.5); /* Blue overlay */
+    backdrop-filter: blur(10px); /* Blurs everything behind it */
+    z-index: 1; /* Places it behind the login panel */
+  }
+
+
+.BejelentkezesPult img {
+    width: 50px; /* A gomb ikon mérete */
+    
+}
+
+.BejelentkezesPult {
+    position: absolute;
+    top: 50%; /* Képernyő középre igazítása */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Pontos középre igazítás */
+    width: 400px; /* Fix szélesség */
+    background-color: white; /* Fehér háttér */
+    border-radius: 8px; /* Lekerekített sarkok */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Árnyék a lebegő hatásért */
+    padding: 20px; /* Belső térköz */
+    text-align: center; /* Szöveg középre igazítása */
+}
+
+.BejelentkezesPult input {
+    width: 80%;
+    padding: 10px;
+    margin: 20px auto;
+    font-size: 1rem;
+    display: block;
+}
+
+.BejelentkezesPult button {
+    position: relative;
+    bottom:10px;
+    width: 60%;
+    padding: 10px;
+    margin: 10px auto;
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.BejelentkezesPult button:hover {
+    background-color: #0056b3; /* Hover hatás */
+}
+.BejelentkezesPult .register-link {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 1rem;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .BejelentkezesPult .register-link:hover {
+    text-decoration: underline;
+  }
+
+  .BejelentkezesPult .alszoveg{
+    
+    position: absolute;
+    bottom: 10px;
+    right: 120px;
+    color: black;
+  }
